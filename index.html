@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Raya Filter Konsep - Trusted Solutions in Air & Oil Filtration</title>
+    <meta name="description" content="PT. Raya Filter Konsep, distributor resmi EMW Filtertechnik (Germany) dan SKF RecondOil (Sweden). Solusi filtrasi udara dan circular oil technology.">
+    <meta name="keywords" content="filter, filtrasi, EMW, SKF, RecondOil, air filter, oil filter, industrial, Indonesia">
+    <meta name="author" content="PT. Raya Filter Konsep">
+    <meta name="theme-color" content="#10B981">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rayafilter.com/">
+    <meta property="og:title" content="PT. Raya Filter Konsep - Trusted Solutions in Air & Oil Filtration">
+    <meta property="og:description" content="Distributor resmi EMW Filtertechnik (Germany) dan SKF RecondOil (Sweden). Solusi filtrasi udara dan circular oil technology.">
+    <meta property="og:image" content="/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rayafilter.com/">
+    <meta property="twitter:title" content="PT. Raya Filter Konsep - Trusted Solutions in Air & Oil Filtration">
+    <meta property="twitter:description" content="Distributor resmi EMW Filtertechnik (Germany) dan SKF RecondOil (Sweden). Solusi filtrasi udara dan circular oil technology.">
+    <meta property="twitter:image" content="/assets/images/twitter-image.jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981',
+                        secondary: '#34D399',
+                        accent: '#6EE7B7',
+                        dark: '#1F2937',
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Custom animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Gradient backgrounds */
+        .hero-gradient {
+            background: linear-gradient(135deg, #10B981 0%, #34D399 50%, #6EE7B7 100%);
+        }
+        
+        .card-gradient {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+        
+        /* Grid pattern for modern hero */
+        .bg-grid-pattern {
+            background-image: 
+                linear-gradient(rgba(16, 185, 129, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(16, 185, 129, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        /* Modern hero animations */
+        .hero-float {
+            animation: heroFloat 3s ease-in-out infinite;
+        }
+        
+        @keyframes heroFloat {
+            0%, 100% { transform: translateY(0px) rotate(6deg); }
+            50% { transform: translateY(-10px) rotate(6deg); }
+        }
+        
+        /* Smooth reveal animation */
+        .reveal-text {
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(16, 185, 129, 0.1) 50%,
+                transparent 100%
+            );
+            animation: revealText 2s ease-out forwards;
+        }
+        
+        @keyframes revealText {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        /* Modern button styles */
+        .btn-modern-primary {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.25);
+            transform: translateY(0);
+            transition: all 0.2s ease;
+        }
+        
+        .btn-modern-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px 0 rgba(16, 185, 129, 0.35);
+        }
+        
+        .btn-modern-secondary {
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+        
+        .btn-modern-secondary:hover {
+            border-color: rgba(16, 185, 129, 0.2);
+            box-shadow: 0 4px 16px 0 rgba(16, 185, 129, 0.1);
+        }
+        
+        /* Badge styles */
+        .badge-modern {
+            background: rgba(16, 185, 129, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+        
+        /* Stats counter animation */
+        .stats-counter {
+            animation: countUp 2s ease-out forwards;
+        }
+        
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #10B981;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #059669;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-md fixed w-full top-0 z-50 shadow-lg" data-aos="fade-down">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">PT. Raya Filter Konsep</h1>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Beranda</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Tentang Kami</a>
+                        <a href="#foundation" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Yayasan</a>
+                        <a href="#products" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Produk</a>
+                        <a href="#industries" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Industri</a>
+                        <a href="#sustainability" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Keberlanjutan</a>
+                        <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors">Kontak</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none focus:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="mobile-nav-link text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+                <a href="#about" class="mobile-nav-link text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Tentang Kami</a>
+                <a href="#foundation" class="mobile-nav-link text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Yayasan</a>
+                <a href="#products" class="mobile-nav-link text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Produk</a>
+                <a href="#industries" class="mobile-nav-link text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Industri</a>
+                <a href="#sustainability" class="mobile-nav-link text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Keberlanjutan</a>
+                <a href="#contact" class="mobile-nav-link text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center relative bg-white">
+        <!-- Subtle geometric pattern -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-emerald-50 rounded-full opacity-50"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-100 rounded-full opacity-30"></div>
+            <!-- Grid pattern -->
+            <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Hero Content -->
+                <div class="text-left" data-aos="fade-right">
+                    <!-- Company Badge -->
+                    <div class="badge-modern inline-flex items-center px-4 py-2 text-emerald-600 rounded-full text-sm font-medium mb-8">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                        Trusted Partner Since 2017
+                    </div>
+                    
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Advanced
+                        <span class="text-emerald-500 relative">
+                            Filtration
+                            <svg class="absolute -bottom-2 left-0 w-full h-3" viewBox="0 0 200 10" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 8 Q100 0 200 8" stroke="#10B981" stroke-width="2" fill="none" opacity="0.3"/>
+                            </svg>
+                        </span>
+                        <br/>
+                        Solutions
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
+                        Distributor resmi EMW Filtertechnik (Germany) dan SKF RecondOil (Sweden). 
+                        Menghadirkan teknologi filtrasi udara dan circular oil yang berkelanjutan.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="flex items-center gap-8 mb-8 stats-counter hero-stats-mobile sm:flex-row">
+                        <div>
+                            <div class="text-2xl font-bold text-gray-900">8+</div>
+                            <div class="text-sm text-gray-500">Years Experience</div>
+                        </div>
+                        <div class="w-px h-8 bg-gray-200 hidden sm:block"></div>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-900">60+</div>
+                            <div class="text-sm text-gray-500">Countries Served</div>
+                        </div>
+                        <div class="w-px h-8 bg-gray-200 hidden sm:block"></div>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-900">96%</div>
+                            <div class="text-sm text-gray-500">CO₂ Reduction</div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#products" class="btn-modern-primary group text-white px-8 py-4 rounded-lg font-semibold text-center inline-flex items-center justify-center">
+                            Explore Solutions
+                            <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn-modern-secondary text-gray-900 px-8 py-4 rounded-lg font-semibold text-center">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual -->
+                <div class="flex justify-center lg:justify-end" data-aos="fade-left">
+                    <div class="relative">
+                        <!-- Main visual container -->
+                        <div class="relative w-80 h-80 sm:w-96 sm:h-96 hero-visual-mobile sm:hero-visual-desktop">
+                            <!-- Background circles -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-3xl hero-float opacity-20"></div>
+                            <div class="absolute inset-4 bg-white rounded-3xl shadow-2xl flex items-center justify-center">
+                                <!-- Icon grid -->
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-wind text-emerald-600"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-filter text-blue-600"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-leaf text-emerald-600"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-recycle text-green-600"></i>
+                                    </div>
+                                    <div class="w-16 h-16 bg-emerald-500 rounded-xl flex items-center justify-center">
+                                        <i class="fas fa-cog text-white text-xl"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-tint text-blue-600"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-industry text-emerald-600"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-globe text-green-600"></i>
+                                    </div>
+                                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-award text-emerald-600"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating elements -->
+                            <div class="absolute -top-4 -left-4 w-8 h-8 bg-emerald-500 rounded-full animate-pulse"></div>
+                            <div class="absolute -bottom-4 -right-4 w-6 h-6 bg-green-400 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
+                            <div class="absolute top-1/3 -right-8 w-4 h-4 bg-blue-400 rounded-full animate-pulse" style="animation-delay: 2s;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-6">Tentang Kami</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 to-green-400 mx-auto"></div>
+            </div>
+            
+            <!-- Company Story -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-dark mb-6">Cerita Perusahaan</h3>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        PT. Raya Filter Konsep didirikan pada Juli 2017 dengan komitmen menghadirkan solusi filtrasi udara dan oli terbaik dari brand global.
+                    </p>
+                    
+                    <!-- Timeline -->
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-lg">2017</div>
+                            <div class="ml-6">
+                                <p class="text-dark font-semibold">Menjadi distributor resmi EMW Filtertechnik, Jerman</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-lg">2023</div>
+                            <div class="ml-6">
+                                <p class="text-dark font-semibold">Menjadi distributor resmi SKF RecondOil, Swedia</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <i class="fas fa-globe text-3xl text-primary mb-4"></i>
+                        <h4 class="font-semibold text-dark">Global Partnership</h4>
+                        <p class="text-gray-600 text-sm">Kemitraan dengan brand internasional terkemuka</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <i class="fas fa-leaf text-3xl text-accent mb-4"></i>
+                        <h4 class="font-semibold text-dark">Sustainable Solutions</h4>
+                        <p class="text-gray-600 text-sm">Solusi ramah lingkungan untuk industri</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <i class="fas fa-award text-3xl text-yellow-500 mb-4"></i>
+                        <h4 class="font-semibold text-dark">Quality Assurance</h4>
+                        <p class="text-gray-600 text-sm">Standar kualitas internasional</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <i class="fas fa-handshake text-3xl text-blue-500 mb-4"></i>
+                        <h4 class="font-semibold text-dark">Expert Support</h4>
+                        <p class="text-gray-600 text-sm">Dukungan teknis profesional</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vision & Mission -->
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Vision -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl" data-aos="fade-up">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-eye text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark">Visi</h3>
+                    </div>
+                    <p class="text-gray-600 text-center leading-relaxed">
+                        Menjadi penyedia solusi filtrasi udara & oli terdepan di Indonesia dengan teknologi yang inovatif dan ramah lingkungan.
+                    </p>
+                </div>
+                
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bullseye text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark">Misi</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-600">Menyediakan produk dengan standar kualitas internasional</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-600">Mendukung efisiensi energi & keberlanjutan industri</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-600">Memberikan solusi teknis dan layanan terbaik bagi pelanggan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foundation Profile Section -->
+    <section id="foundation" class="py-20 bg-gradient-to-br from-emerald-50 to-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-6">Profil Yayasan</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 to-green-400 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    Organisasi sosial yang bergerak di bidang pengelolaan lingkungan dan pemberdayaan masyarakat dengan fokus solusi berkelanjutan terhadap permasalahan sampah.
+                </p>
+            </div>
+
+            <!-- Foundation Mission -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                <!-- Content -->
+                <div data-aos="fade-right">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-emerald-500 text-white rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-leaf text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Visi & Misi</h3>
+                                <p class="text-emerald-600 font-medium">Lingkungan Berkelanjutan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-emerald-500 pl-6">
+                                <h4 class="font-bold text-gray-900 mb-2">Visi</h4>
+                                <p class="text-gray-600">
+                                    Menciptakan lingkungan bersih, sehat, dan berkelanjutan untuk kehidupan yang lebih baik.
+                                </p>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h4 class="font-bold text-gray-900 mb-2">Misi</h4>
+                                <p class="text-gray-600">
+                                    Memberdayakan masyarakat dalam menjaga kebersihan sekaligus memperoleh manfaat ekonomi dari pengelolaan sampah yang berkelanjutan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual -->
+                <div class="flex justify-center" data-aos="fade-left">
+                    <div class="relative">
+                        <div class="w-64 h-64 sm:w-80 sm:h-80 foundation-visual-mobile sm:foundation-visual-desktop bg-gradient-to-br from-emerald-400 to-green-500 rounded-3xl flex items-center justify-center transform rotate-6 shadow-2xl">
+                            <div class="w-48 h-48 sm:w-64 sm:h-64 bg-white rounded-2xl flex items-center justify-center transform -rotate-6">
+                                <div class="text-center">
+                                    <i class="fas fa-recycle text-5xl text-emerald-500 mb-4"></i>
+                                    <p class="text-gray-700 font-bold text-lg">Waste to Energy</p>
+                                    <p class="text-gray-500 text-sm">Sustainable Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Floating elements -->
+                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-emerald-400 rounded-full animate-pulse"></div>
+                        <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-green-400 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foundation Programs -->
+            <div class="mb-16" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-gray-900 text-center mb-12">Program Utama</h3>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 foundation-programs-mobile lg:gap-8">
+                    <!-- Program 1: Cleaning & Recycling -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-broom text-2xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 text-center mb-4">Cleaning & Recycling</h4>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Program kebersihan lingkungan dan daur ulang sampah untuk mengurangi volume limbah yang mencemari bumi.
+                        </p>
+                    </div>
+
+                    <!-- Program 2: Waste to Energy -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-bolt text-2xl text-emerald-600"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 text-center mb-4">Waste to Energy</h4>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Teknologi incinerator modern untuk mengolah sampah menjadi energi ramah lingkungan dan sumber daya bermanfaat.
+                        </p>
+                    </div>
+
+                    <!-- Program 3: Charity for Incinerator -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-hands-helping text-2xl text-green-600"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 text-center mb-4">Charity for Incinerator</h4>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Bantuan pembangunan dan pengadaan incinerator bagi daerah atau komunitas yang membutuhkan pengelolaan sampah yang lebih baik.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foundation Partnership -->
+            <div class="text-center" data-aos="fade-up">
+                <div class="bg-gradient-to-r from-emerald-500 to-green-500 rounded-3xl p-6 foundation-quote-mobile md:p-12 text-white">
+                    <div class="max-w-3xl mx-auto">
+                        <i class="fas fa-handshake text-4xl mb-6"></i>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6">Mitra Strategis untuk Masa Depan Berkelanjutan</h3>
+                        <p class="text-lg mb-8 text-emerald-100">
+                            Berkomitmen menjadi mitra strategis bagi pemerintah, swasta, maupun komunitas dalam menciptakan solusi pengelolaan sampah yang berkelanjutan.
+                        </p>
+                        <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+                            <p class="text-xl font-medium italic">
+                                "Sampah bukan akhir dari segalanya, melainkan awal dari energi baru untuk kehidupan yang lebih baik."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Solutions Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-6">Produk & Solusi</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 to-green-400 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Solusi terdepan untuk filtrasi udara dan circular oil technology dari brand global terpercaya
+                </p>
+            </div>
+
+            <!-- EMW Filtertechnik -->
+            <div class="mb-20" data-aos="fade-up">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 lg:p-12">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <img src="https://via.placeholder.com/80x80?text=EMW" alt="EMW Logo" class="w-20 h-20 rounded-lg mr-4">
+                                <div>
+                                    <h3 class="text-3xl font-bold text-dark">EMW Filtertechnik</h3>
+                                    <p class="text-blue-600 font-semibold">Germany - Since 1954</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6 text-lg">
+                                Sejak 1954, EMW menghadirkan teknologi air filtration dan water treatment yang digunakan di lebih dari 60 negara.
+                            </p>
+                            
+                            <!-- Product List -->
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div class="bg-white p-4 rounded-lg shadow-md">
+                                    <i class="fas fa-wind text-2xl text-blue-600 mb-2"></i>
+                                    <h4 class="font-semibold text-dark">Air Filters</h4>
+                                    <p class="text-sm text-gray-600">HVAC, Gas Turbine, EPA/HEPA, ATEX</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md">
+                                    <i class="fas fa-layer-group text-2xl text-blue-600 mb-2"></i>
+                                    <h4 class="font-semibold text-dark">Pocket Filters</h4>
+                                    <p class="text-sm text-gray-600">& Pre-filters</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md">
+                                    <i class="fas fa-atom text-2xl text-blue-600 mb-2"></i>
+                                    <h4 class="font-semibold text-dark">Activated Carbon</h4>
+                                    <p class="text-sm text-gray-600">Poret®Carbon Filters</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-md">
+                                    <i class="fas fa-tint text-2xl text-blue-600 mb-2"></i>
+                                    <h4 class="font-semibold text-dark">Filter Foam Poret®</h4>
+                                    <p class="text-sm text-gray-600">Wastewater & Fish farming</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <div class="relative">
+                                <div class="w-80 h-80 bg-white rounded-2xl shadow-2xl flex items-center justify-center">
+                                    <i class="fas fa-filter text-6xl text-blue-600"></i>
+                                </div>
+                                <div class="absolute -top-4 -right-4 w-24 h-24 bg-emerald-500 text-white rounded-full flex items-center justify-center">
+                                    <span class="text-sm font-bold">60+<br>Countries</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKF RecondOil -->
+            <div class="mb-20" data-aos="fade-up">
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 lg:p-12">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 lg:order-1 flex justify-center">
+                            <div class="relative">
+                                <div class="w-80 h-80 bg-white rounded-2xl shadow-2xl flex items-center justify-center">
+                                    <i class="fas fa-recycle text-6xl text-green-600"></i>
+                                </div>
+                                <div class="absolute -top-4 -left-4 w-24 h-24 bg-green-600 text-white rounded-full flex items-center justify-center">
+                                    <span class="text-sm font-bold">96%<br>CO₂ ↓</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-1 lg:order-2">
+                            <div class="flex items-center mb-6">
+                                <img src="https://via.placeholder.com/80x80?text=SKF" alt="SKF Logo" class="w-20 h-20 rounded-lg mr-4">
+                                <div>
+                                    <h3 class="text-3xl font-bold text-dark">SKF RecondOil</h3>
+                                    <p class="text-green-600 font-semibold">Sweden - DST Technology</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6 text-lg">
+                                Dengan teknologi Double Separation Technology (DST), RecondOil Box memungkinkan oli industri digunakan berulang kali tanpa diganti.
+                            </p>
+                            
+                            <!-- Benefits List -->
+                            <div class="space-y-4">
+                                <div class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-leaf text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark">96% pengurangan CO₂</h4>
+                                        <p class="text-sm text-gray-600">Ramah lingkungan</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-microscope text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark">Menghilangkan nanopartikel</h4>
+                                        <p class="text-sm text-gray-600">Varnish & air removal</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-chart-line text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark">Performa meningkat</h4>
+                                        <p class="text-sm text-gray-600">Downtime berkurang</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-dollar-sign text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark">Biaya menurun drastis</h4>
+                                        <p class="text-sm text-gray-600">Oli & perawatan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries & Applications Section -->
+    <section id="industries" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-6">Industri & Aplikasi</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 to-green-400 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Produk kami digunakan di berbagai industri dan aplikasi
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- EMW Applications -->
+                <div class="bg-white rounded-2xl shadow-xl p-8" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-industry text-2xl text-emerald-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark">EMW Filtertechnik</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-emerald-50 rounded-lg">
+                            <i class="fas fa-building text-emerald-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark">HVAC Systems</h4>
+                                <p class="text-gray-600 text-sm">Gedung & rumah sakit</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-emerald-50 rounded-lg">
+                            <i class="fas fa-cog text-emerald-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark">Gas Turbine</h4>
+                                <p class="text-gray-600 text-sm">Air intake filtration</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-emerald-50 rounded-lg">
+                            <i class="fas fa-fish text-emerald-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark">Biological Treatment</h4>
+                                <p class="text-gray-600 text-sm">Wastewater & fish farming</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-emerald-50 rounded-lg">
+                            <i class="fas fa-exclamation-triangle text-emerald-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark">ATEX Zones</h4>
+                                <p class="text-gray-600 text-sm">Hazardous areas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKF Applications -->
+                <div class="bg-white rounded-2xl shadow-xl p-8" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-oil-can text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark">SKF RecondOil</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                            <i class="fas fa-industry text-green-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark">Manufacturing</h4>
+                                <p class="text-gray-600 text-sm">& energi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                            <i class="fas fa-tools text-green-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark">Lubrication Systems</h4>
+                                <p class="text-gray-600 text-sm">Sistem pelumasan mesin</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                            <i class="fas fa-factory text-green-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark">High Oil Consumption</h4>
+                                <p class="text-gray-600 text-sm">Pabrik dengan konsumsi oli tinggi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                            <i class="fas fa-recycle text-green-600 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-dark">Circular Economy</h4>
+                                <p class="text-gray-600 text-sm">Sustainable operations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Section -->
+            <div class="mt-20 text-center" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-dark mb-8">Portfolio & Klien</h3>
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <p class="text-lg text-gray-600 mb-8">
+                        Kami dipercaya oleh berbagai industri di Indonesia dalam menghadirkan solusi filtrasi udara & oli. 
+                        Sebagai partner resmi EMW dan SKF RecondOil, kami memastikan setiap solusi sesuai standar global.
+                    </p>
+                    
+                    <!-- Client Logos Placeholder -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+                        <div class="bg-gray-200 h-20 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 font-bold">Client 1</span>
+                        </div>
+                        <div class="bg-gray-200 h-20 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 font-bold">Client 2</span>
+                        </div>
+                        <div class="bg-gray-200 h-20 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 font-bold">Client 3</span>
+                        </div>
+                        <div class="bg-gray-200 h-20 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 font-bold">Client 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-6">Keberlanjutan</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 to-green-400 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Keberlanjutan adalah inti dari solusi kami
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div data-aos="fade-right">
+                    <h3 class="text-3xl font-bold text-dark mb-8">Komitmen Lingkungan</h3>
+                    
+                    <div class="space-y-8">
+                        <!-- Circular Oil -->
+                        <div class="bg-gradient-to-r from-green-50 to-green-100 p-6 rounded-2xl">
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                                    <i class="fas fa-recycle text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-dark mb-3">Circular Use of Oil</h4>
+                                    <p class="text-gray-700 mb-3">
+                                        RecondOil memungkinkan penggunaan oli berulang kali, mengurangi limbah dan emisi hingga 96%.
+                                    </p>
+                                    <div class="flex items-center text-green-600 font-semibold">
+                                        <i class="fas fa-arrow-down mr-2"></i>
+                                        <span>96% pengurangan emisi CO₂</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clean Air & Water -->
+                        <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-2xl">
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                                    <i class="fas fa-tint text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-dark mb-3">Clean Air & Water</h4>
+                                    <p class="text-gray-700 mb-3">
+                                        Teknologi filtrasi EMW dan Poret®aqua untuk pengolahan air limbah yang ramah lingkungan.
+                                    </p>
+                                    <div class="flex items-center text-emerald-600 font-semibold">
+                                        <i class="fas fa-check-circle mr-2"></i>
+                                        <span>Teknologi wastewater treatment</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-gradient-to-r from-emerald-500 to-green-400 rounded-2xl text-white">
+                        <p class="text-lg font-medium">
+                            Dengan teknologi ini, PT. Raya Filter Konsep mendukung industri yang lebih hijau dan efisien.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visual -->
+                <div class="flex justify-center" data-aos="fade-left">
+                    <div class="relative w-80 h-80">
+                        <!-- Circular diagram -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                            <div class="w-64 h-64 bg-white rounded-full flex items-center justify-center shadow-2xl">
+                                <div class="text-center">
+                                    <i class="fas fa-globe-americas text-4xl text-green-600 mb-4"></i>
+                                    <h4 class="text-2xl font-bold text-dark">Sustainable</h4>
+                                    <h4 class="text-2xl font-bold text-dark">Future</h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating icons -->
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center animate-bounce">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="absolute top-1/2 -right-4 transform -translate-y-1/2 w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center animate-bounce" style="animation-delay: 1s;">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-yellow-500 text-white rounded-full flex items-center justify-center animate-bounce" style="animation-delay: 2s;">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="absolute top-1/2 -left-4 transform -translate-y-1/2 w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center animate-bounce" style="animation-delay: 3s;">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-emerald-500 to-green-400 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Hubungi Kami</h2>
+                <div class="w-24 h-1 bg-white mx-auto mb-6"></div>
+                <p class="text-xl text-green-100 max-w-3xl mx-auto">
+                    Tim kami siap membantu Anda menemukan solusi filtrasi udara & oli terbaik untuk kebutuhan industri Anda.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-8">PT. Raya Filter Konsep</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Alamat</h4>
+                                <p class="text-blue-100">[Alamat kantor Anda di Indonesia]</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Email</h4>
+                                <a href="mailto:info@rayafilter.com" class="text-blue-100 hover:text-white transition-colors">[Email perusahaan]</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Telepon</h4>
+                                <a href="tel:+62" class="text-blue-100 hover:text-white transition-colors">[Nomor telepon]</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Jam Operasional</h4>
+                                <p class="text-blue-100">Senin - Jumat: 08:00 - 17:00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6">Kirim Pesan</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Nama *</label>
+                                <input type="text" name="name" required class="form-input w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-green-200 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Nama Anda">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email *</label>
+                                <input type="email" name="email" required class="form-input w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-green-200 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Perusahaan</label>
+                            <input type="text" name="company" class="form-input w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-green-200 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Nama Perusahaan">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Pesan *</label>
+                            <textarea name="message" required rows="4" class="form-input w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-green-200 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Ceritakan kebutuhan filtrasi Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">PT. Raya Filter Konsep</h3>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Distributor resmi EMW Filtertechnik (Germany) dan SKF RecondOil (Sweden). 
+                        Solusi filtrasi udara dan circular oil technology untuk industri Indonesia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Beranda</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition-colors">Produk</a></li>
+                        <li><a href="#industries" class="text-gray-400 hover:text-white transition-colors">Industri</a></li>
+                        <li><a href="#sustainability" class="text-gray-400 hover:text-white transition-colors">Keberlanjutan</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">EMW Filtertechnik</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">SKF RecondOil</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Air Filters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Oil Filtration</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 PT. Raya Filter Konsep. All rights reserved. 
+                    <span class="mx-2">|</span>
+                    Designed with ❤️ for a sustainable future
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-primary', 'font-bold');
+                }
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.float-animation');
+            
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Contact form handling
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Tim kami akan segera menghubungi Anda.');
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
