@@ -1233,7 +1233,7 @@
                 <!-- Contact Form -->
                 <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8" data-aos="fade-left">
                     <h3 class="text-2xl font-bold mb-6" data-id="contact-form-title">Kirim Pesan</h3>
-                    <form id="contact-form" class="space-y-6">
+                    <form id="contact-form" class="space-y-6" action="mailto:rury.jns@rayafiltrationconcepts.com" method="post" enctype="text/plain">
                         <div class="grid sm:grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-sm font-medium mb-2" data-id="form-name-label">Nama *</label>
@@ -1434,13 +1434,35 @@
         });
 
         // Contact form handling
-        document.querySelector('form').addEventListener('submit', (e) => {
-            e.preventDefault();
+        document.querySelector('#contact-form').addEventListener('submit', (e) => {
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const company = formData.get('company');
+            const message = formData.get('message');
+            
+            // Create email content
+            const subject = `New Contact Form Submission from ${name}`;
+            const body = `Name: ${name}%0D%0A` +
+                        `Email: ${email}%0D%0A` +
+                        `Company: ${company || 'Not specified'}%0D%0A%0D%0A` +
+                        `Message:%0D%0A${message}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:rury.jns@rayafiltrationconcepts.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show confirmation message
             const currentLang = localStorage.getItem('language') || 'id';
-            const message = currentLang === 'id' 
-                ? 'Terima kasih! Pesan Anda telah dikirim. Tim kami akan segera menghubungi Anda.'
-                : 'Thank you! Your message has been sent. Our team will contact you soon.';
-            alert(message);
+            const confirmMessage = currentLang === 'id' 
+                ? 'Email client Anda akan terbuka. Silakan kirim email tersebut.'
+                : 'Your email client will open. Please send the email.';
+            
+            setTimeout(() => {
+                alert(confirmMessage);
+            }, 500);
         });
 
         // Language Switcher Functionality
